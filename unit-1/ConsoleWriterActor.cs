@@ -10,7 +10,7 @@ namespace WinTail
     class ConsoleWriterActor : UntypedActor
     {
         protected override void OnReceive(object message)
-        {
+        {            
             if (message is Messages.InputError)
             {
                 var msg = message as Messages.InputError;
